@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+  
+    --transparent: #61535343;
+    --white:#fff;
+    --red:red;
+    --orange: orangered;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background-image: url("/images/bg.jpg");
+}
+
+.login{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 12rem;
+}
+
+.login form {
+    display: grid;
+    background: var(--transparent);
+    padding: 11rem 7rem 7rem 7rem;
+    border-radius: 20px;
+    position:relative;
+  
+}
+
+.login form h2{
+    color: var(--white);
+    position: absolute;
+    top: 5rem;
+    left:9rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.login form h2 span{
+    font-size: 3rem;
+}
+
+.login form input {
+    width: 25rem;
+    margin: 10px;
+    padding: 15px;
+}
+.login form input[type = submit]{
+    background: var(--orange);
+    color: var(--white);
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.login form input[type = submit]:hover{
+    background: red;
+}
